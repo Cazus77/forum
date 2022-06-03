@@ -9,6 +9,19 @@ class PostController {
       res.status(404).render("404");
     }
   }
+
+  showCreate(req, res) {
+    res.render("create");
+  }
+
+  async create(req, res) {
+    try {
+      const post = await Post.create(req.body);
+      res.redirect("/");
+    } catch (e) {
+      res.render("404");
+    }
+  }
 }
 
 export default new PostController();
