@@ -1,10 +1,12 @@
 <h2>Форумы</h2>
 {{#if posts.length}}
-    <ul>
-        {{#each posts}}
-            <li><p>{{text}}</p><span>{{author}}</span><span>{{createData}}</span></li>
-        {{/each}}
-    </ul>
+  <ul class="collection">
+    {{#each posts}}
+      <li class="collection-item"><a href="#" class="collection-item">
+          <p>{{text}}</p><span>{{author}}</span><span>{{createData}}</span></a>
+      </li>
+    {{/each}}
+  </ul>
 {{else}}
-    <p>Нет отзывов</p>
+  <p>Нет отзывов</p>
 {{/if}}
