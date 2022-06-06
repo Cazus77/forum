@@ -10,6 +10,20 @@ class PostController {
     }
   }
 
+  async getOne(req, res) {
+    try {
+      const text = req.params;
+      if (!text) {
+        res.render("404");
+      }
+
+      const post = await Post.findOne(text).lean();
+      res.render("post", { post: post });
+    } catch (e) {
+      res.render("404");
+    }
+  }
+
   showCreate(req, res) {
     res.render("create");
   }

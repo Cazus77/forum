@@ -1,12 +1,12 @@
-<h2>Форумы</h2>
+<h3>Форумы</h3>
 {{#if posts.length}}
   <ul class="collection">
     {{#each posts}}
-      <li class="collection-item"><a href="#" class="collection-item">
+      <li class="collection-item"><a href="/posts:{{text}}" class="collection-item">
           <p>{{text}}</p><span>{{author}}</span><span>{{createData}}</span></a>
       </li>
     {{/each}}
   </ul>
 {{else}}
-  <p>Нет отзывов</p>
+  <p>Нет Постов</p>
 {{/if}}
