@@ -1,9 +1,10 @@
-<h3>Форумы</h3>
+<h3>Посты</h3>
 {{#if posts.length}}
   <ul class="collection">
     {{#each posts}}
-      <li class="collection-item"><a href="/posts:{{text}}" class="collection-item">
-          <p>{{text}}</p><span>{{author}}</span><span>{{createData}}</span></a>
+      <li class="collection-item">
+          <p>{{text}}</p>
+          <h6>{{author}}</h6><span>{{createData}}</span>
       </li>
     {{/each}}
   </ul>

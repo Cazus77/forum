@@ -1,0 +1,10 @@
+<h3>Форумы</h3>
+{{#if topics.length}}
+  <ul class="collection">
+    {{#each topics}}
+      <li class="collection-item"><a href="{{topic}}"><h5>{{topic}}</h5></a></li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>Нет Тем</p>
+{{/if}}

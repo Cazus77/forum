@@ -1,27 +1,60 @@
 <h2>Новая тема</h2>
 <div class="row">
-  <form class="col s12" action="" method="POST">
-    <div class="input-field col s6">
-      <input
-        placeholder="Автор"
-        id="first_name"
-        type="text"
-        class="validate"
-        name="author"
-      />
-      <label for="first_name"></label>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <textarea
-          placeholder="Пост"
-          id="textarea1"
-          class="materialize-textarea"
-          name="text"
-        ></textarea>
-        <label for="textarea1"></label>
-      </div>
-    </div>
-    <input class="waves-effect waves-light btn" type="submit" name="submit" />
-  </form>
+    <form class="col s12"  action="" method="POST">
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="input_text" type="text" data-length="10" name="author" placeholder="Автор">
+                <label for="input_text"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="input_text" type="text" data-length="10" name="topic"  placeholder="Тема">
+                <label for="input_text"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="textarea2" class="materialize-textarea" data-length="120" name="text"  placeholder="Пост"></textarea>
+                <label for="textarea2"></label>
+            </div>
+        </div>
+        <input class="waves-effect waves-light btn" type="submit" name="submit" />
+    </form>
 </div>
+<!--<div class="row">-->
+<!--  <form class="col s12" action="" method="POST">-->
+<!--    <div class="input-field col s6">-->
+<!--      <input-->
+<!--        placeholder="Автор"-->
+<!--        id="first_name"-->
+<!--        type="text"-->
+<!--        class="validate"-->
+<!--        name="author"-->
+<!--      />-->
+<!--      <label for="first_name"></label>-->
+<!--    </div>-->
+<!--    <div class="input-field col s6">-->
+<!--      <input-->
+<!--        placeholder="Тема"-->
+<!--        id="first_name"-->
+<!--        type="text"-->
+<!--        class="validate"-->
+<!--        name="topic"-->
+<!--      />-->
+<!--      <label for="first_name"></label>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--      <div class="input-field col s12">-->
+<!--        <textarea-->
+<!--          placeholder="Пост"-->
+<!--          id="textarea1"-->
+<!--          class="materialize-textarea"-->
+<!--          name="text"-->
+<!--        ></textarea>-->
+<!--        <label for="textarea1"></label>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <input class="waves-effect waves-light btn" type="submit" name="submit" />-->
+<!--  </form>-->
+<!--</div>-->

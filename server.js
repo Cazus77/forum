@@ -22,7 +22,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", router);
 
-async function startApp() {
+async function start() {
   try {
     await mongoose.connect(DB_URL);
     app.listen(PORT, () => {
@@ -33,4 +33,4 @@ async function startApp() {
   }
 }
 
-startApp();
+start();
